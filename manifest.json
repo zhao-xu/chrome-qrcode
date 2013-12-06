@@ -3,14 +3,31 @@
 
     "name": "QRCode",
     "description": "Encode url to QRCoded image",
-    "version": "0.1",
+    "version": "0.2",
+
+    "default_locale": "en",
+
+    "background": {
+        "persistent": false,
+        "scripts": [
+            "js/lib/llqrcode.js",
+            "js/background.js"
+        ]
+    },
 
     "browser_action": {
-       // "default_icon": "icon.png",
+        "default_icon":{
+            "19": "images/icon_19.png"
+        },
         "default_popup": "popup.html"
     },
 
     "permissions": [
-        "activeTab"
-    ]
+        "activeTab",
+        "contextMenus",
+        "<all_urls>"
+    ],
+    "icons": {
+        "16":"images/contextMenu_16.png"
+    }
 }
