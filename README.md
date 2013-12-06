@@ -15,6 +15,12 @@ A simple Chrome extension for encoding current page url into a QRCode image.
 
 ## History
 
+v0.2
+
+* 2013-12-06
+* 添加邮件点击二维码图片解码功能
+* 添加图标
+
 v0.1
 
 * 2013-12-01
