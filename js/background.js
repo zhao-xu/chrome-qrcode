@@ -2,7 +2,7 @@ qrcode.callback = function(text) {
     if (text == 'error decoding QR Code') {
         alert('无法解析二维码图片')
     } else {
-        alert(text);
+        prompt('', text);
     }
 };
 
